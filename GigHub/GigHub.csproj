@@ -221,9 +221,9 @@
     <Compile Include="Migrations\201809051447148_ModifyingTypeOfUserInGigs.Designer.cs">
       <DependentUpon>201809051447148_ModifyingTypeOfUserInGigs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809051525012_ModifyingDateTime.cs" />
-    <Compile Include="Migrations\201809051525012_ModifyingDateTime.Designer.cs">
-      <DependentUpon>201809051525012_ModifyingDateTime.cs</DependentUpon>
+    <Compile Include="Migrations\201809051542130_AddForeignKeyPropertiesToGig.cs" />
+    <Compile Include="Migrations\201809051542130_AddForeignKeyPropertiesToGig.Designer.cs">
+      <DependentUpon>201809051542130_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -328,8 +328,8 @@
     <EmbeddedResource Include="Migrations\201809051447148_ModifyingTypeOfUserInGigs.resx">
       <DependentUpon>201809051447148_ModifyingTypeOfUserInGigs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809051525012_ModifyingDateTime.resx">
-      <DependentUpon>201809051525012_ModifyingDateTime.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809051542130_AddForeignKeyPropertiesToGig.resx">
+      <DependentUpon>201809051542130_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

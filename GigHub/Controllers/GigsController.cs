@@ -33,14 +33,11 @@ namespace GigHub.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel viewModel) // we need to convert viewModel into gig model and save it 
         {
-            var artistId = User.Identity.GetUserId();
-            var artist = _context.Users.Single(u => u.Id == artistId);
-            var genre = _context.Genres.Single(g => g.Id == viewModel.Genre);
             var gig = new Gig
             {
-                Artist = artist,
+                ArtistId = User.Identity.GetUserId(),
                 DateTime = DateTime.Parse(string.Format("{0} {1}", viewModel.Date, viewModel.Time)),
-                Genre = genre,
+                GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
 

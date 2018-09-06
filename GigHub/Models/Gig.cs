@@ -7,8 +7,10 @@ namespace GigHub.Models
     {
         public int Id { get; set; }
 
-        [Required]
         public ApplicationUser Artist { get; set; }
+
+        [Required] // we added required to make sure that the foreign key property is set not the artist navigation property 
+        public string ArtistId { get; set; } // the reason it's string cause the key at ApplicationUser is a string 
 
         public DateTime DateTime { get; set; }
 
@@ -16,8 +18,10 @@ namespace GigHub.Models
         [StringLength(255)]
         public string Venue { get; set; }
 
-        [Required]
         public Genre Genre { get; set; }
+
+        [Required]
+        public byte GenreId { get; set; } // the reason it's byte cause Genre id is byte not int  
     }
 
 }
