@@ -30,6 +30,7 @@ namespace GigHub.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel) // we need to convert viewModel into gig model and save it 
         {
             if (!ModelState.IsValid)
