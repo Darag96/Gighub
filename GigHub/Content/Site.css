@@ -92,3 +92,38 @@ body {
     text-align: center;
     margin-right: 22px;
 }
+
+.gigs {
+    list-style: none;
+}
+
+.gigs > li { 
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gigs > li .details {
+    position: absolute;
+    top: 0;
+    left : 70px;
+}
+
+
+.date {
+    position: relative;
+}
+
+
+.month {
+    background-color: red;
+    text-align: center;
+    padding-top: 15px;
+    color: #eee;
+    width: 147px;
+    height: 49px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+
+
